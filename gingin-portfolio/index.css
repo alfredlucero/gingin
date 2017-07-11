@@ -10,8 +10,35 @@ body {
 	padding: 0;
 	margin: 0 auto;
 	font-family: 'Poiret One', cursive;
+	color: #757070;
 }
 
 h1 {
 	font-family: 'Cedarville Cursive', cursive;
 }
+
+h2 {
+	font-family: 'Cedarville Cursive', cursive;
+}
+
+h3 {
+	font-family: 'Poiret One', cursive;
+}
+
+a {
+	font-family: 'Cedarville Cursive', cursive;
+	color: #696A97;
+}
+
+.bar--small {
+	width: 100%;
+	height: 25px;
+	background-color: #806F80;
+}
+
+.bar--medium {
+	width: 100%;
+	height: 50px;
+	background-color: #806F80;
+}
+
