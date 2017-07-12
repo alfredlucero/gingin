@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
@@ -11,6 +11,7 @@
   <title>Regine Deguzman | Portfolio</title>
 	
 	<link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive|Poiret+One" rel="stylesheet">
+	<link rel="stylesheet" href="jquery.fullPage.css">
   <link rel="stylesheet" href="index.css">
 
   <!--[if lt IE 9]>
@@ -18,65 +19,86 @@
   <![endif]-->
 </head>
 <body>
-	<header>
-		<h1>Regine Deguzman</h1>
-		<div class="bar--small"></div>
-		<div class="bar--medium"></div>
-	</header>
 
-	<ul>
-		<li><a href="#">About</a></li>
-		<li><a href="#">Currently</a></li>
-		<li><a href="#">Past Projects</a></li>
-		<li><a href="#">Contacts</a></li>
-	</ul>
+	<ul id="menu">
+		<li data-menuanchor="about"><a href="#about">About</a></li>
+		<li data-menuanchor="currently"><a href="#currently">Currently</a></li>
+		<li data-menuanchor="past-projects"><a href="#past-projects">Past Projects</a></li>
+		<li data-menuanchor="contacts"><a href="#contacts">Contacts</a></li>
+	</ul> <!-- end menu -->
 
-	<div id="about">
-		<img src="" alt="Regine Deguzman Photo">
-		<div id="about-descr">
-			<p>BLAH BLAH BLAH TEXT HERE</p>
-			<p>UCLA</p>
-			<p>PSYCHOBIOLOGY</p>
-			<p>DOGES</p>
-			<p>GLOBAL HEALTH</p>
-			<p>CLINICAL PSYCHOLOGY</p>
-			<ul>
-				<li>Facebook</li>
-				<li>Twitter</li>
-				<li>Instagram</li>
-			</ul>
-		</div>
-	</div>
+	<div id="fullpage">
+		
+		<div id="about-page" class="section">
+			<header>
+				<h1>Regine Deguzman</h1>
+				<div class="bar--small"></div>
+				<div class="bar--medium"></div>
+			</header>
+			<img src="" alt="Regine Deguzman Photo">
+			<div id="about-descr">
+				<p>BLAH BLAH BLAH TEXT HERE</p>
+				<p>UCLA</p>
+				<p>PSYCHOBIOLOGY</p>
+				<p>DOGES</p>
+				<p>GLOBAL HEALTH</p>
+				<p>CLINICAL PSYCHOLOGY</p>
+				<ul>
+					<li>Facebook</li>
+					<li>Twitter</li>
+					<li>Instagram</li>
+				</ul>
+			</div>
+		</div> <!-- end about -->
 
-	<div id="currently">
-		<div id="currently-left">
-			<h2>What I'm Up To</h2>
-			<p>BLAH BLAH BLAH GRE STUDYING JK</p>
-			<p>I'M NOT ACTUALLY GOING TO PUT THAT HERE</p>
-		</div>
-		<div id="currently-right">
-			<h2>Design</h2>
-			<p>I play with sketch and invision thanks for investing in me boo.</p>
-			<p>also I helped turn zmb design from zero to hero</p>
-			<p>yeah yo girl did that. boom.</p>
-		</div>
-	</div>
+		<div id="currently-page" class="section">
+			<div id="currently-wiut">
+				<h2>What I'm Up To</h2>
+				<p>BLAH BLAH BLAH GRE STUDYING JK</p>
+				<p>I'M NOT ACTUALLY GOING TO PUT THAT HERE</p>
+			</div>
+			<div id="currently-design">
+				<h2>Design</h2>
+				<p>I play with sketch and invision thanks for investing in me boo.</p>
+				<p>also I helped turn zmb design from zero to hero</p>
+				<p>yeah yo girl did that. boom.</p>
+			</div>
+		</div> <!-- end currently -->
+		
+		<div id="past-projects-page" class="section">
+			<div id="past-projects-zmb" class="slide">
+				<h2>Zeta Mu Beta Web Design</h2>
+				<img src="#" alt="Zeta Mu Beta Web Design">
+			</div>
+			<div id="past-projects-pogs" class="slide">
+				<h2>Pogs Virtual Refrigerator</h2>
+				<img src="#" alt="Pogs Web Design">
+			</div>
+			<div id="past-projects-gingin" class="slide">
+				<h2>Gingin Portfolio</h2>
+				<img src="#" alt="Gingin Portfolio Web Design">
+			</div>
+			<div id="past-projects-culdevate" class="slide">
+				<h2>Culdevate</h2>
+				<img src="#" alt="Culdevate Portfolio Web Design">
+			</div>
+		</div> <!-- end past-projects -->
 
-	<div id="past-projects">
-		<img src="#" alt="Zeta Mu Beta Web Design">
-		<img src="#" alt="Pogs Web Design">
-	</div>
-	
-	<footer>
-		<h3>EMAIL</h3>
-		<ul>
-			<li>Facebook</li>
-			<li>Twitter</li>
-			<li>Instagram</li>
-		</ul>
-		<h3>DESIGNED BY: REGINE DEGUZMAN</h3>
-		<h3>BUILT BY: ALFRED LUCERO</h3>
-	</footer>
+		<div id="contacts-page" class="section">
+				<h3>EMAIL</h3>
+				<ul>
+					<li>Facebook</li>
+					<li>Twitter</li>
+					<li>Instagram</li>
+				</ul>
+				<h3>DESIGNED BY: REGINE DEGUZMAN</h3>
+				<h3>BUILT BY: ALFRED LUCERO</h3>
+		</div> <!-- end contacts -->
 
+	</div> <!-- end fullpage -->
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	<script type="text/javascript" src="index.js"></script>
 </body>
 </html>
