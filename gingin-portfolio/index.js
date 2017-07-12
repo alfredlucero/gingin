@@ -4,6 +4,8 @@ $(document).ready(function() {
 		anchors: ['about', 'currently', 'past-projects', 'contacts'],
 		menu: '#menu',
 		navigation: true,
-		navigationPosition: 'right'
+		navigationPosition: 'right',
+		slidesNavigation: true,
+		slidesNavPosition: 'bottom'
 	});
 });
