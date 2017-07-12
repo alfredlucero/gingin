@@ -79,8 +79,19 @@ a {
 	z-index: 70;
 }
 
-.section {
-	text-align: center;
+#currently-container {
+	display: flex;
+	height: 100%;
+}
+
+#currently-wiut {
+  flex: 1;
+	background-color: #F7EACA;
+}
+
+#currently-design {
+	flex: 1;
+	background-color: #F7F6F6;
 }
 
 .bar--small {
