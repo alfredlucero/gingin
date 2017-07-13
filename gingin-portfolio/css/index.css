@@ -36,12 +36,14 @@ h3 {
 p {
 	margin: 10px;
 	font-size: 1em;
+	font-weight: bold;
 }
 
 a {
 	font-size: 1.5em;
 	font-family: 'Cedarville Cursive', cursive;
 	color: #696A97;
+	text-decoration: none;
 }
 
 #menu {
@@ -53,14 +55,16 @@ a {
 	width: 100%;
 	z-index: 100;
 	text-align: center;
-	-ms-transform: rotate(-10deg); /* IE 9 */
-  -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
-  transform: rotate(-10deg);
+}
+
+#about-content {
+	display: flex;
+	flex-direction: column;
 }
 
 #about-profile {
-	display: inline-block;
-	padding: 15px;
+	flex: 1;
+	padding: 15px 15px 0 15px;
 }
 
 #about-profile-photo {
@@ -69,7 +73,7 @@ a {
 }
 
 #about-descr {
-	display: inline-block;
+	flex: 1;
 	padding: 0 15px 15px 15px;
 }
 
@@ -174,21 +178,20 @@ a {
 /* For smaller tablets */
 @media only screen and (min-width: 768px) {
 	h1 {
-		font-size: 3.5em;
+		font-size: 3em;
 	}
 
 	h2 {
 		margin: 30px;
-		font-size: 3em;
+		font-size: 2.5em;
 	}
 
 	h3 {
-		font-size: 2.5em;
+		font-size: 2em;
 	}
 
 	p {
 		margin: 15px;
-		font-size: 2em;
 	}
 
 	a {
@@ -247,7 +250,8 @@ a {
 	}
 
 	#about-profile-photo {
-
+		width: 150px;
+		height: 150px;
 	}
 
 	#currently-container {
@@ -298,12 +302,30 @@ a {
 	}
 
 	p {
-		margin: 15px;
-		font-size: 2em;
+		margin: 30px;
+		font-size: 1.5em;
 	}
 
 	a {
 		font-size: 1.5em;
+	}
+
+	#about-content {
+		flex-direction: row;
+	}
+
+	#about-profile {
+		flex: 1;
+		padding: 30px;
+	}
+
+	#about-profile-photo {
+		width: 300px;
+		height: 300px;
+	}
+	
+	#about-descr {
+		flex: 3;
 	}
 
 	.social-link:link {

@@ -7,7 +7,6 @@ $(document).ready(function() {
 		navigationPosition: 'right',
 		slidesNavigation: true,
 		slidesNavPosition: 'bottom',
-		responsiveSlides: true,
 		responsiveWidth: 768
 	});
 });
