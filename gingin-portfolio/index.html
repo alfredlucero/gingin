@@ -12,8 +12,8 @@
 	
 	<link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive|Poiret+One" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="jquery.fullPage.css">
-  <link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+  <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -32,12 +32,26 @@
 		
 		<div id="about-page" class="section">
 			<header>
-				<h1>Regine Deguzman</h1>
+				<div class="about-header">
+					<h1 id="about-title">Regine Deguzman</h1>
+					<div class="square-grid">
+						<div class="square-row">
+							<div class="square"></div>
+							<div class="square"></div>
+						</div>
+						<div class="square-row">
+							<div class="square"></div>
+							<div class="square"></div>
+						</div>
+					</div>
+				</div>
 				<div class="bar--medium"></div>
 				<div class="bar--small"></div>
 				<div class="bar--medium"></div>
 			</header>
-			<img src="" alt="Regine Deguzman Photo">
+			<div id="about-profile">
+				<img src="images/gingin-profile.jpg" width="150" height="150" alt="Regine Deguzman Photo">
+			</div>
 			<div id="about-descr">
 				<p>BLAH BLAH BLAH TEXT HERE</p>
 				<p>UCLA</p>
@@ -72,11 +86,11 @@
 		<div id="past-projects-page" class="section">
 			<div id="past-projects-zmb" class="slide">
 				<h2>Zeta Mu Beta</h2>
-				<img src="#" alt="Zeta Mu Beta Web Design">
+				<img src="images/zetamubeta-project.png" alt="Zeta Mu Beta Web Design">
 			</div>
 			<div id="past-projects-pogs" class="slide">
 				<h2>Pogs Virtual Refrigerator</h2>
-				<img src="#" alt="Pogs Web Design">
+				<img src="images/pogs-project.png" alt="Pogs Web Design">
 			</div>
 			<div id="past-projects-gingin" class="slide">
 				<h2>Gingin Portfolio</h2>
@@ -84,25 +98,25 @@
 			</div>
 			<div id="past-projects-culdevate" class="slide">
 				<h2>Culdevate</h2>
-				<img src="#" alt="Culdevate Portfolio Web Design">
+				<h3>Designing in progress!</h3>
 			</div>
 		</div> <!-- end past-projects -->
 
 		<div id="contacts-page" class="section">
-				<h3>EMAIL</h3>
+				<h3><i class="fa fa-envelope" aria-hidden="true"></i> EMAIL: reginedeguzman@ucla.edu</h3>
 				<ul class="social-links">
 					<li><a class="social-link" href="https://www.facebook.com/GiinXD" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 					<li><a class="social-link" href="https://www.instagram.com/regingin.d/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 					<li><a class="social-link" href="https://twitter.com/regine_dgzmn" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 				</ul>
-				<h3>DESIGNED BY: REGINE DEGUZMAN</h3>
-				<h3>BUILT BY: ALFRED LUCERO</h3>
+				<h3><i class="fa fa-paint-brush" aria-hidden="true"></i> DESIGNED BY: REGINE DEGUZMAN</h3>
+				<h3><i class="fa fa-laptop" aria-hidden="true"></i> BUILT BY: <a id="social-pedong" class="social-link" href="https://alfredlucero.github.io/" target="_blank">ALFRED LUCERO</a></h3>
 		</div> <!-- end contacts -->
 
 	</div> <!-- end fullpage -->
 
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="jquery.fullPage.js"></script>
-	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>

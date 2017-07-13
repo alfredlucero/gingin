@@ -15,22 +15,23 @@ body {
 }
 
 h1 {
-	font-size: 5em;
-	font-family: 'Cedarville Cursive', cursive;
-}
-
-h2 {
+	margin: 0;
 	font-size: 4em;
 	font-family: 'Cedarville Cursive', cursive;
 }
 
-h3 {
+h2 {
 	font-size: 3em;
+	font-family: 'Cedarville Cursive', cursive;
+}
+
+h3 {
+	font-size: 2em;
 	font-family: 'Poiret One', cursive;
 }
 
 p {
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
 a {
@@ -89,6 +90,26 @@ a {
 	z-index: 70;
 }
 
+#about-title {
+	position: absolute;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	-ms-transform: rotate(-10deg); /* IE 9 */
+  -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
+  transform: rotate(-10deg);
+}
+
+#about-profile {
+	display: inline-block;
+	padding: 15px;
+}
+
+#about-descr {
+	display: inline-block;
+	padding: 15px;
+}
+
 #currently-container {
 	display: flex;
 	height: 100%;
@@ -96,11 +117,13 @@ a {
 
 #currently-wiut {
   flex: 1;
+  padding: 15px;
 	background-color: #F7EACA;
 }
 
 #currently-design {
 	flex: 1;
+	padding: 15px;
 	background-color: #F7F6F6;
 }
 
@@ -110,6 +133,19 @@ a {
 
 .section {
 	text-align: center;
+}
+
+.square-grid {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.square {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin: 5px;
+	background-color: #F7EACA;
 }
 
 .bar--small {
@@ -138,18 +174,27 @@ a {
 }
 
 .social-link:link {
+	font-family: 'Poiret One', cursive;
 	font-size: 2.5em;
 	color: #F7EACA;
+	text-decoration: none;
 }
 
 .social-link:visited {
 	color: #F7EACA;
+	text-decoration: none;
 }
 
 .social-link:hover {
 	color: #757070;
+	text-decoration: none;
 }
 
 .social-link:active {
 	color: #757070;
+	text-decoration: none;
+}
+
+#social-pedong {
+	font-size: 1em;
 }
