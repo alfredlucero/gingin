@@ -1,12 +1,8 @@
 $(document).ready(function() {
 	$('#fullpage').fullpage({
-		sectionsColor: ['#fff', '#fff', '#fff', '#806F80'],
-		anchors: ['about', 'currently', 'past-projects', 'contacts'],
-		menu: '#menu',
+		sectionsColor: ['#B8D5D9', '#fff', '#fff', '#806F80'],
 		navigation: true,
-		navigationPosition: 'right',
-		slidesNavigation: true,
-		slidesNavPosition: 'bottom',
+		navigationTooltips: ['Home', 'About Me', 'Currently', 'Past Projects', 'Orgs', 'Reach Out', 'Contacts'],
 		responsiveWidth: 768
 	});
 });

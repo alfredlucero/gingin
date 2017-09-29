@@ -1,11 +1,9 @@
 /* 
 	Colors Breakdown:
-	Taupe: #757070;
-	Violet: #806F80;
-	Indigo: #696A97;
-	Marigold: #F7EACA;
-	Eggshell: #F7F6F6;
-	Dark Gray: #757070;
+	White: #FFFFFF;
+	Black: #4B4B4B;
+	Blue: #B8D5D9;
+	Gold: #FFCD14;
 */
 
 /* For mobile phones (width: 320-767) */
@@ -13,37 +11,37 @@ body {
 	padding: 0;
 	margin: 0 auto;
 	font-family: 'Poiret One', cursive;
-	color: #757070;
+	color: #4B4B4B;
+	font-size: 18px;
 }
 
 h1 {
-	margin: 0;
-	font-size: 2.5em;
+	font-size: 48px;
 	font-family: 'Cedarville Cursive', cursive;
+	color: #ffffff;
 }
 
 h2 {
-	margin: 15px;
-	font-size: 2em;
+	font-size: 36px;
 	font-family: 'Cedarville Cursive', cursive;
 }
 
 h3 {
-	font-size: 1.5em;
+	font-size: 24px;
 	font-family: 'Poiret One', cursive;
-}
-
-p {
-	margin: 10px;
-	font-size: 1em;
-	font-weight: bold;
 }
 
 a {
 	font-size: 1.5em;
 	font-family: 'Cedarville Cursive', cursive;
-	color: #696A97;
+	color: #B8D5D9;
 	text-decoration: none;
+}
+
+.home-page {
+	display: flex;
+	align-content: center;
+	justify-content: center;
 }
 
 #menu {
