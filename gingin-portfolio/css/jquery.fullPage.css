@@ -106,10 +106,10 @@ html.fp-enabled,
     position: fixed;
     z-index: 100;
     margin-top: -32px;
-    top: 10%;
+    top: 7.5%;
     left: 5%;
     opacity: 1;
-    -webkit-transform: translate3d(0,0,0);
+    -webkit-transform: translated(0,0,0);
 }
 #fp-nav.right {
     right: 17px;
@@ -193,7 +193,7 @@ html.fp-enabled,
 #fp-nav ul li .fp-tooltip {
     position: absolute;
     top: -2px;
-    color: #fff;
+    color: #4B4B4B;
     font-size: 18px;
     font-family: 'Poiret One', cursive;
     white-space: nowrap;

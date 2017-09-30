@@ -3,6 +3,7 @@
 	White: #FFFFFF;
 	Black: #4B4B4B;
 	Blue: #B8D5D9;
+	Darker Blue: #7CC6D0;
 	Gold: #FFCD14;
 */
 
@@ -12,23 +13,28 @@ body {
 	margin: 0 auto;
 	font-family: 'Poiret One', cursive;
 	color: #4B4B4B;
-	font-size: 18px;
+	font-size: 1em;
 }
 
 h1 {
-	font-size: 48px;
+	font-size: 2em;
 	font-family: 'Cedarville Cursive', cursive;
-	color: #ffffff;
+	color: #FFFFFF;
 }
 
 h2 {
-	font-size: 36px;
+	font-size: 1.5em;
 	font-family: 'Cedarville Cursive', cursive;
+	color: #4B4B4B;
 }
 
 h3 {
-	font-size: 24px;
+	font-size: 1.25em;
 	font-family: 'Poiret One', cursive;
+}
+
+p {
+	line-height: 1.43;
 }
 
 a {
@@ -38,104 +44,176 @@ a {
 	text-decoration: none;
 }
 
-.home-page {
+.section {
+	text-align: center;
+}
+
+.bar {
+	background-color: #B8D5D9; 
+}
+
+.bar--xlarge {
+	height: 100px;
+}
+
+.bar--large {
+	height: 75px;
+}
+
+.bar--medium {
+	height: 50px;
+}
+
+.bar--small {
+	height: 25px;
+}
+
+.home-body {
 	display: flex;
 	align-content: center;
 	justify-content: center;
 }
 
-#menu {
-	display: none;
+.about-acrostic {
+	margin-top: 15px;
+	margin-left: 70px;
 }
 
-#about-title {
-	position: absolute;
-	width: 100%;
-	z-index: 100;
-	text-align: center;
+.about-acrostic h3 {
+	margin: 0;
+	font-family: 'Cedarville Cursive', cursive;
 }
 
-#about-content {
-	display: flex;
-	flex-direction: column;
+.about-acrostic h3.R {
+	margin-top: 5px;
 }
 
-#about-profile {
-	flex: 1;
-	padding: 15px 15px 0 15px;
+.about-acrostic h3.first-E {
+	margin-left: -2em;
 }
 
-#about-profile-photo {
-	width: 150px;
-	height: 150px;
+.about-acrostic h3.G {
+	margin-left: -6.25em;
 }
 
-#about-descr {
-	flex: 1;
-	padding: 0 15px 15px 15px;
+.about-acrostic h3.I {
+	margin-left: -4.5em;
 }
 
-#currently-container {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
+.about-acrostic h3.N {
+	margin-left: -1em;	
 }
 
-#currently-wiut {
-  flex: 1;
-  padding: 15px;
-	background-color: #F7EACA;
-	text-align: left;
+.about-acrostic h3.last-E {
+	margin-left: -5.5em;
+	margin-bottom: 15px;
 }
 
-#currently-design {
-	flex: 1;
+.about-acrostic span {
+	color: #FFCD14;
+}
+
+.about-img {
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+}
+
+.about-img-wrapper {
+	margin-bottom: 15px;
+}
+
+.about-hello-title {
+	margin: 0;
+}
+
+.about-hello-descr {
+	margin: 0 0 15px 0;
 	padding: 15px;
-	background-color: #F7F6F6;
 	text-align: left;
 }
 
-#contacts-page {
-	color: #F7F6F6;
+.currently-skills-title {
+	margin: 15px 0 0 0;
 }
 
-.section {
-	text-align: center;
+.currently-skills-list {
+	padding: 0 15px 15px 15px;
+	text-align: left;
 }
 
-.square-grid {
-	margin-top: 30px;
-	margin-bottom: 30px;
+.currently-skills-list p:first-child {
+	margin-top: 0;
 }
 
-.square {
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	margin: 5px;
-	background-color: #F7EACA;
+.currently-skills-list p:last-child {
+	margin-bottom: 0;
 }
 
-.bar--small {
-	width: 100%;
-	height: 5px;
-	margin-top: 2.5px;
-	margin-bottom: 5px;
-	background-color: #806F80;
+.currently-status-title {
+	margin: 0;
 }
 
-.bar--medium {
-	width: 100%;
-	height: 10px;
-	background-color: #806F80;
+.currently-status-descr {
+	margin: 0 0 15px 0;
+	padding: 15px;
+	text-align: left;
 }
 
-.fp-controlArrow {
-	display: none;
+.past-projects-photos a {
+	display: block;
 }
 
 .past-projects-photo {
 	width: 200px;
+	margin-bottom: 15px;
+}
+
+.past-projects-photo--dev {
+	display: inline-block;
+	width: 200px;
+	margin-bottom: 15px;
+	background-color: #D8D8D8;
+}
+
+.education-title,
+.orgs-title {
+	margin: 15px 0;
+}
+
+.education-content,
+.orgs-content {
+	margin-bottom: 30px;
+	padding: 0 15px;
+	text-align: left;
+}
+
+.education-school {
+	display: flex;
+	justify-content: space-between;
+}
+
+.orgs-row {
+	display: flex;
+	justify-content: space-around;
+}
+
+.reachout-title {
+	margin: 15px 0;
+}
+
+.reachout-info-descr,
+.reachout-work-descr {
+	padding: 0 15px;
+}
+
+.reachout-work-descr {
+	margin-bottom: 30px;
+}
+
+.contact-content {
+	padding: 0 15px;
+	color: #FFFFFF;
 }
 
 .social-links {
@@ -152,22 +230,22 @@ a {
 .social-link:link {
 	font-family: 'Poiret One', cursive;
 	font-size: 2em;
-	color: #F7EACA;
+	color: #7CC6D0;
 	text-decoration: none;
 }
 
 .social-link:visited {
-	color: #F7EACA;
+	color: #7CC6D0;
 	text-decoration: none;
 }
 
 .social-link:hover {
-	color: #757070;
+	color: #4B4B4B;
 	text-decoration: none;
 }
 
 .social-link:active {
-	color: #757070;
+	color: #4B4B4B;
 	text-decoration: none;
 }
 
@@ -196,57 +274,6 @@ a {
 
 	a {
 		font-size: 1em;
-	}
-
-	#menu li {
-		display: inline-block;
-		margin: 10px;
-		color: #696A97;
-		background: #fff;
-		background: rgba(255,255,255, 0.5);
-		-webkit-border-radius: 10px;
-	  border-radius: 10px;
-	}
-
-	#menu li.active {
-		background: #666;
-		background: rgba(0,0,0, 0.5);
-		color: #F7F6F6;
-	}
-
-	#menu li a {
-		text-decoration: none;
-		color: #696A97;
-	}
-
-	#menu li.active a:hover {
-		color: #696A97;
-	}
-
-	#menu li:hover {
-		background: rgba(255,255,255, 0.8);
-	}
-
-	#menu li a,
-	#menu li.active a {
-		display: block;
-		padding: 9px 18px;
-	}
-
-	#menu li.active a {
-		color: #F7F6F6;
-	}
-
-	#menu {
-		display: block;
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 40px;
-		padding: 0;
-		margin: 0;
-		z-index: 70;
 	}
 
 	#about-profile-photo {
@@ -350,3 +377,34 @@ a {
 	}
 }
 
+/* 
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: 'Poiret One', cursive;
+	color: #4B4B4B;
+	font-size: 18px;
+}
+
+h1 {
+	font-size: 48px;
+	font-family: 'Cedarville Cursive', cursive;
+	color: #ffffff;
+}
+
+h2 {
+	font-size: 36px;
+	font-family: 'Cedarville Cursive', cursive;
+}
+
+h3 {
+	font-size: 24px;
+	font-family: 'Poiret One', cursive;
+}
+
+a {
+	font-size: 1.5em;
+	font-family: 'Cedarville Cursive', cursive;
+	color: #B8D5D9;
+	text-decoration: none;
+} */
