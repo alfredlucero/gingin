@@ -93,11 +93,11 @@ a {
 }
 
 .about-acrostic h3.G {
-	margin-left: -6.25em;
+	margin-left: -6.5em;
 }
 
 .about-acrostic h3.I {
-	margin-left: -4.5em;
+	margin-left: -4.75em;
 }
 
 .about-acrostic h3.N {
@@ -114,8 +114,8 @@ a {
 }
 
 .about-img {
-	width: 75px;
-	height: 75px;
+	width: 100px;
+	height: 100px;
 	border-radius: 50%;
 }
 
@@ -134,7 +134,7 @@ a {
 }
 
 .currently-skills-title {
-	margin: 15px 0 0 0;
+	margin: 30px 0 0 0;
 }
 
 .currently-skills-list {
@@ -151,13 +151,17 @@ a {
 }
 
 .currently-status-title {
-	margin: 0;
+	margin: 15px 0 0 0;
 }
 
 .currently-status-descr {
-	margin: 0 0 15px 0;
+	margin: 0 0 60px 0;
 	padding: 15px;
 	text-align: left;
+}
+
+.past-projects-title {
+	margin-bottom: 0;
 }
 
 .past-projects-photos a {
@@ -174,32 +178,78 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 	width: 200px;
 	height: 100px;
 	margin: 0 auto;
 	background-color: #D8D8D8;
 }
 
-.education-title,
+.past-projects-photo--dev h2,
+.past-projects-photo--dev p {
+	margin: 0;
+}
+
+.organizations .bar--medium {
+	height: 15%;
+}
+
+.organizations .bar--small {
+	height:  7.5%;
+}
+
+.education,
+.orgs {
+	height: 30%;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.orgs {
+	height: 40%;
+}
+
+.education-title {
+	margin-bottom: 15px;
+}
+
 .orgs-title {
-	margin: 15px 0;
+	margin: 30px 0 0 0;
 }
 
 .education-content,
 .orgs-content {
 	margin-bottom: 30px;
-	padding: 0 15px;
 	text-align: left;
 }
 
 .education-school {
 	display: flex;
 	justify-content: space-between;
+	margin: 0;
 }
 
 .orgs-row {
 	display: flex;
 	justify-content: space-around;
+}
+
+.reachout .bar--large {
+	height: 20%
+}
+
+.reachout .bar--xlarge {
+	height: 20%;
+}
+
+.reachout-content {
+	height: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .reachout-title {
