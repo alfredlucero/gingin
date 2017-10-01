@@ -7,7 +7,7 @@
 	Gold: #FFCD14;
 */
 
-/* For mobile phones (width: 320-767) */
+/* For mobile phones and small tablets (320-1023px width) */
 body {
 	padding: 0;
 	margin: 0 auto;
@@ -167,12 +167,16 @@ a {
 .past-projects-photo {
 	width: 200px;
 	margin-bottom: 15px;
+	margin-top: 30px;
 }
 
 .past-projects-photo--dev {
-	display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 200px;
-	margin-bottom: 15px;
+	height: 100px;
+	margin: 0 auto;
 	background-color: #D8D8D8;
 }
 
@@ -253,158 +257,163 @@ a {
 	font-size: 1em;
 }
 
-/* For smaller tablets */
-@media only screen and (min-width: 768px) {
-	h1 {
-		font-size: 3em;
+/* For normal laptop/desktop/iPad Pro */
+@media only screen and (min-width: 1024px) {
+	.bar--xlarge {
+		height: 30%;
 	}
-
-	h2 {
-		margin: 30px;
-		font-size: 2.5em;
+	
+	.bar--large {
+		height: 25%;
 	}
-
-	h3 {
-		font-size: 2em;
-	}
-
-	p {
-		margin: 15px;
-	}
-
-	a {
-		font-size: 1em;
-	}
-
-	#about-profile-photo {
-		width: 150px;
-		height: 150px;
-	}
-
-	#currently-container {
-		flex-direction: row;
-	}
-
-	.bar--small {
-		height: 7.5px;
-		margin-top: 5px;
-		margin-bottom: 10px;
-	}
-
+	
 	.bar--medium {
-		height: 15px;
+		height: 20%;
+	}
+	
+	.bar--small {
+		height: 15%;
 	}
 
-	.square {
-		width: 30px;
-		height: 30px;
+	.about-content {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 50px;
+		height: 55%;
 	}
 
-	.fp-controlArrow {
-		display: block;
+	.about-img {
+		width: 250px;
+		height: 250px;
+		margin: 0 30px;
 	}
 
-	.social-link:link {
-		font-size: 2.5em;
+	.currently-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 65%;
+		padding: 25px 50px;
+	}
+
+	.currently-skills,
+	.currently-status {
+		display: flex;
+	}
+
+	.currently-skills-title,
+	.currently-status-title {
+		margin-top: 0;
+    width: 20%;
+    text-align: left;
+	}
+
+	.currently-skills-list,
+	.currently-status-descr {
+		width: 80%;
+	}
+
+	.currently-skills-list p {
+		margin: 0;
+	}
+
+	.past-projects-content {
+		height: 100%;
+		display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+	}
+
+	.past-projects-column {
+		margin: 0 30px;
+	}
+
+	.past-projects-photos {
+		display: flex;
+    justify-content: center;
+    align-items: center;
 	}
 
 	.past-projects-photo {
 		width: 300px;
-	}
-}
-
-/* For normal laptop/desktop/iPad Pro */
-@media only screen and (min-width: 1024px) {
-	h1 {
-		font-size: 3.5em;
+		margin-bottom: 30px;
 	}
 
-	h2 {
-		margin: 30px;
-		font-size: 3em;
-	}
-
-	h3 {
-		font-size: 2.5em;
-	}
-
-	p {
-		margin: 30px;
-		font-size: 1.5em;
-	}
-
-	a {
-		font-size: 1.5em;
-	}
-
-	#about-content {
-		flex-direction: row;
-	}
-
-	#about-profile {
-		flex: 1;
-		padding: 30px;
-	}
-
-	#about-profile-photo {
+	.past-projects-photo--dev {
 		width: 300px;
-		height: 300px;
+		height: 200px;
 	}
-	
-	#about-descr {
-		flex: 2;
+
+	.education {
+		height: 25%;
+		padding: 0 50px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+	}
+
+	.education-title {
+		width: 35%;
 		text-align: left;
 	}
 
-	.social-link:link {
-		font-size: 2.5em;
+	.education-content {
+		width: 50%;
 	}
 
-	.past-projects-photo {
-		width: 400px;
+	.education-school,
+	.education-content {
+		margin: 0;
+	}
+
+	.orgs {
+		height: 25%;
+	}
+
+	.orgs-title {
+		text-align: left;
+		padding: 0 50px;
+	}
+
+	.reachout-content {
+		height: 45%;
+		display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+	}
+
+	.reachout-row {
+		width: 50%;
 	}
 }
 
 /* For larger laptop/desktop screens */
 @media only screen and (min-width: 1440px) {
-	.square {
-		width: 40px;
-		height: 40px;
+	body {
+		font-size: 1.25em;
+	}
+	
+	h1 {
+		font-size: 2.5em;
+	}
+	
+	h2 {
+		font-size: 2em;
+	}
+	
+	h3 {
+		font-size: 1.5em;
 	}
 
-	.past-projects-photo {
-		width: 500px;
+	.about-acrostic {
+		margin-left: 150px;
+	}
+
+	.about-img {
+		width: 300px;
+		height: 300px;
 	}
 }
-
-/* 
-body {
-	padding: 0;
-	margin: 0 auto;
-	font-family: 'Poiret One', cursive;
-	color: #4B4B4B;
-	font-size: 18px;
-}
-
-h1 {
-	font-size: 48px;
-	font-family: 'Cedarville Cursive', cursive;
-	color: #ffffff;
-}
-
-h2 {
-	font-size: 36px;
-	font-family: 'Cedarville Cursive', cursive;
-}
-
-h3 {
-	font-size: 24px;
-	font-family: 'Poiret One', cursive;
-}
-
-a {
-	font-size: 1.5em;
-	font-family: 'Cedarville Cursive', cursive;
-	color: #B8D5D9;
-	text-decoration: none;
-} */
