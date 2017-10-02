@@ -405,7 +405,7 @@ a {
 /* For normal laptop/desktop/iPad Pro */
 @media only screen and (min-width: 1024px) {
 	body {
-		font-size: 1.25em;
+		font-size: 1em;
 	}
 	
 	h1 {
