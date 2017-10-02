@@ -307,8 +307,119 @@ a {
 	font-size: 1em;
 }
 
+/* For tablets like smaller iPads */
+@media only screen and (min-width: 768px) {
+	body {
+		font-size: 1.1em;
+	}
+	
+	h1 {
+		font-size: 2.1em;
+	}
+	
+	h2 {
+		font-size: 1.6em;
+	}
+	
+	h3 {
+		font-size: 1.35em;
+	}
+
+	.bar--xlarge {
+		height: 20%;
+	}
+
+	.bar--large {
+		height: 15%;
+	}
+
+	.bar--medium {
+		height: 10%;
+	}
+
+	.bar--small {
+		height: 5%;
+	}
+
+	.about .bar--xlarge {
+		height: 15%;
+	}
+
+	.about .bar--large {
+		height: 10%;
+	}
+
+	.about-content {
+		height: 75%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.currently-content {
+		height: 85%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.currently-skills-title {
+		margin-bottom: 15px;
+	}
+
+	.past-projects-photo {
+		width: 300px;
+	}
+
+	.past-projects-photo--dev {
+		width: 300px;
+		height: 200px;
+	}
+
+	.education {
+		height: 35%;
+		align-items: center;
+	}
+
+	.orgs {
+		height: 35%;
+	}
+
+	.education-content {
+		width: 50%;
+	}
+
+	.reachout .bar--xlarge {
+		height: 25%;
+	}
+
+	.reachout-content {
+		height: 55%;
+	}
+
+	.contact h3 {
+		font-size: 1.5em;
+	}
+}
+
 /* For normal laptop/desktop/iPad Pro */
 @media only screen and (min-width: 1024px) {
+	body {
+		font-size: 1.25em;
+	}
+	
+	h1 {
+		font-size: 2.5em;
+	}
+	
+	h2 {
+		font-size: 2em;
+	}
+	
+	h3 {
+		font-size: 1.5em;
+	}
+
 	.bar--xlarge {
 		height: 30%;
 	}
@@ -325,12 +436,25 @@ a {
 		height: 15%;
 	}
 
+	.about .bar--xlarge {
+		height: 20%;
+	}
+
+	.about .bar--large {
+		height: 15%;
+	}
+
+	.about-acrostic {
+		margin-left: 140px;
+	}
+
 	.about-content {
 		display: flex;
 		justify-content: space-around;
+		flex-direction: row;
 		align-items: center;
 		padding: 50px;
-		height: 55%;
+		height: 65%;
 	}
 
 	.about-img {
@@ -362,6 +486,11 @@ a {
 	.currently-skills-list,
 	.currently-status-descr {
 		width: 80%;
+	}
+
+	.currently-status-descr {
+		margin: 0;
+    padding: 0;
 	}
 
 	.currently-skills-list p {
@@ -417,18 +546,40 @@ a {
 	.education-content {
 		margin: 0;
 	}
+	
+	.organizations .bar--medium {
+		height: 20%;
+	}
+
+	.organizations .bar--small {
+		height: 10%;
+	}
 
 	.orgs {
-		height: 25%;
+		height: 35%;
+		padding: 0 50px;
 	}
 
 	.orgs-title {
 		text-align: left;
-		padding: 0 50px;
+		padding: 0;
+	}
+
+	.education {
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+
+	.reachout .bar--large {
+		height: 20%;
+	}
+
+	.reachout .bar--xlarge {
+		height: 25%
 	}
 
 	.reachout-content {
-		height: 45%;
+		height: 55%;
 		display: flex;
     justify-content: center;
     align-items: center;
@@ -437,6 +588,10 @@ a {
 
 	.reachout-row {
 		width: 50%;
+	}
+
+	.contact h3 {
+		font-size: 1.75em;
 	}
 }
 
